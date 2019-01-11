@@ -1,0 +1,10 @@
+properties
+ - zbackup:replicated = [proto://][user@][host:]<path>;..
+
+commands:
+ - snapshot: make snapshot(s)
+ - send: send snapshot(s) to another dataset/host
+         saves URI to zbackup:replicated
+ - clean: remove expired/extra snapshots
+          makes bookmark with same properties as reference
+ - fetch: takes bookmark, and uses zbackup:replicated property to recv origional snapshot

@@ -4,8 +4,16 @@ verify_ssl = true
 name = "pypi"
 
 [packages]
+click = "*"
 
 [dev-packages]
+tox = "*"
+pytest = "*"
+pytest-coverage = "*"
+pylint = "*"
+ipython = "*"
+zfs-backup = {editable = true, path = "."}
+isort = "*"
 
 [requires]
 python_version = "3.6"
